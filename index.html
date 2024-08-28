@@ -6,6 +6,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="stylesheet" href="estilo/mediaquery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
 
@@ -18,17 +19,17 @@
                 </h2>
                 <p>Seja bem vindo de volta!
                 porfavor faça o login</p>
-                <form action="login.php" method="get">
-                    <p>
-                        <label for="iuser">Nome</label>
-                        <input type="text" name="user" id="iuser">
-                    </p>
-                    <p>
-                        <label for="ipass">Senha</label>
-                        <input type="text" name="pass" id="ipass">
-                    </p>
-                    <p><input type="submit" value="Entrar"></p>
-                    <p><input type="button" value="Esqueci a minha senha"></p>
+                <form action="login.php" method="get" autocomplete="on">
+                    <div class=campo>
+                        <label for="iuser"><span class="material-symbols-outlined">person</span></label>
+                        <input type="text" name="user" id="iuser"  autocomplete="email" required>
+                    </div>
+                    <div class=campo>
+                        <label for="ipass"><span class="material-symbols-outlined">vpn_key</span></label>
+                        <input type="password" name="pass" id="ipass" autocomplete="current-password">
+                    </div>
+                    <input type="submit" value="Entrar" required>
+                    <a href="esqueci.html">Esqueci a senha <span class="material-symbols-outlined">mail</span></a>
                 </form>
             </div>
         </section>
