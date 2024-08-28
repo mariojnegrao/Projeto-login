@@ -2,11 +2,12 @@
 
 @media screen and (min-width : 768px) and (max-width : 992px){
     body{
-        background-image: linear-gradient(to bottom,#43aee3, #eae7e78f);
+        background-image: linear-gradient(to bottom,#43aee3, #4feee18f);
     }
 
     section#login{
         width: 80vw;
+        height: 300px;
         transition-duration: 0.45s;
     }
     section > div#foto{
@@ -20,14 +21,22 @@
         width: 65%;
         height: 100%;
     }
+    div#form h2{
+        font-size: 2em;
+    }
+    div#form p{
+        font-size: 1em;
+        margin: 15px 4px 0px 4px;
+    }
 }
 @media screen and (min-width : 992px){
 
     body{
-        background-image: linear-gradient(to bottom,#43aee3, #eae7e78f);
+        background-image: linear-gradient(to bottom,#43aee3, #4feee18f);
     }
     section#login{
         width: 990px;
+        height: 300px;
         transition-duration: 0.45s;
     }
     section > div#foto{
@@ -39,5 +48,13 @@
         float: left;
         width: 50%;
         height: 100%;
+    }
+    div#form h2{
+        font-size: 2em;
+
+    }
+    div#form p{
+        font-size: 1em;
+        margin: 15px 4px 0px 4px;
     }
 }

@@ -15,21 +15,25 @@
             <div id="foto">
             </div>
             <div id="form">
-                <h2>login
-                </h2>
+                <h2>login</h2>
                 <p>Seja bem vindo de volta!
                 porfavor faça o login</p>
-                <form action="login.php" method="get" autocomplete="on">
+                <form action="login.php" method="post" autocomplete="on">
+                    
                     <div class=campo>
                         <label for="iuser"><span class="material-symbols-outlined">person</span></label>
-                        <input type="text" name="user" id="iuser"  autocomplete="email" required>
+                        <input type="text" name="user" id="iuser" autocomplete="email" required minlength="8" maxlength="30">
                     </div>
+                   
                     <div class=campo>
                         <label for="ipass"><span class="material-symbols-outlined">vpn_key</span></label>
-                        <input type="password" name="pass" id="ipass" autocomplete="current-password">
+                        <input type="password" name="pass" id="ipass" required autocomplete="current-password" minlength="8">
                     </div>
-                    <input type="submit" value="Entrar" required>
-                    <a href="esqueci.html">Esqueci a senha <span class="material-symbols-outlined">mail</span></a>
+                    
+                    <input type="submit" value="Entrar">
+                    
+                    <a href="esqueci.html" class="botao">Esqueci a senha <span class="material-symbols-outlined">mail</span></a>
+
                 </form>
             </div>
         </section>
