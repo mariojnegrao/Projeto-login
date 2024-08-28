@@ -1,9 +1,13 @@
 @charset "UTF-8";
 
 @media screen and (min-width : 768px) and (max-width : 992px){
+    body{
+        background-image: linear-gradient(to bottom,#43aee3, #eae7e78f);
+    }
 
     section#login{
         width: 80vw;
+        transition-duration: 0.45s;
     }
     section > div#foto{
         float: left;
@@ -19,16 +23,20 @@
 }
 @media screen and (min-width : 992px){
 
+    body{
+        background-image: linear-gradient(to bottom,#43aee3, #eae7e78f);
+    }
     section#login{
         width: 990px;
+        transition-duration: 0.45s;
     }
     section > div#foto{
-        float: left;
-        width: 46%;
+        float: right;
+        width: 50%;
         height: 100%;
     }
     section > div#form{
-        float: right;
+        float: left;
         width: 50%;
         height: 100%;
     }

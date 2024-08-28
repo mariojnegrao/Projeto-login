@@ -1,10 +1,5 @@
 @charset "UTF-8";
 
-/*
-
- #84d6ff
- #47d6c3b6
-*/
 
 *{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -13,7 +8,7 @@
     box-sizing: border-box;
 }
 html,body{
-    background-color: #2375a1;
+    background-color: #4995bef1;
     height: 100vh;
     width: 100vw;
 }
@@ -33,6 +28,7 @@ section{
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 3px 4px 4px #0000005c;
+    transition-duration: 0.45s;
 }
 section > div#foto{
     display: block;
